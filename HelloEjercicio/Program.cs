@@ -134,7 +134,25 @@ namespace HelloEjercicio
                Console.WriteLine("Entrada no válida. Ingresa un número entre 1 y 7.");
              }
 
-             // Ejercicio 6: Otro ejercicio
+             // Ejercicio 6: Tax Calculator
+             Console.Write("Ingresa tu salario anual: ");
+             if (double.TryParse(Console.ReadLine(), out double salarioAnual))
+             {
+             if (salarioAnual > 12000)
+             {
+             double excedente = salarioAnual - 12000;
+             double impuesto = excedente * 0.15;
+              Console.WriteLine($"Resultado: {impuesto:F2}");
+              }
+             else
+             {
+              Console.WriteLine("Resultado: No debe impuestos.");
+             }
+             }
+             else
+             {
+              Console.WriteLine("Entrada no válida. Ingresa un salario anual válido.");
+             }
              // Ejercicio 7: Otro ejercicio
              // Ejercicio 8: Otro ejercicio
              // Ejercicio 9: Otro ejercicio
