@@ -99,7 +99,41 @@ namespace HelloEjercicio
                 }
 
 
-             // Ejercicio 5: Otro ejercicio
+             // Ejercicio 5: Midweek Day
+              Console.Write("Ingresa un número entre 1 y 7: ");
+             if (int.TryParse(Console.ReadLine(), out int numeroDia))
+             {
+              string diaSemana;
+
+              switch (numeroDia)
+             {
+              case 1:
+              diaSemana = "Lunes";
+              break;
+             case 2:
+             diaSemana = "Martes";
+             break;
+             case 3:
+             diaSemana = "Miércoles";
+             break;
+             case 4:
+             diaSemana = "Jueves";
+             break;
+              case 5:
+             diaSemana = "Viernes";
+             break;
+             default:
+             diaSemana = "Número fuera del rango laborable";
+             break;
+             }
+
+              Console.WriteLine($"Resultado: {diaSemana}");
+             }
+             else
+             {
+               Console.WriteLine("Entrada no válida. Ingresa un número entre 1 y 7.");
+             }
+
              // Ejercicio 6: Otro ejercicio
              // Ejercicio 7: Otro ejercicio
              // Ejercicio 8: Otro ejercicio
