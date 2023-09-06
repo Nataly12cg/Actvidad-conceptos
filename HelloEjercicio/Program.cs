@@ -153,7 +153,29 @@ namespace HelloEjercicio
              {
               Console.WriteLine("Entrada no válida. Ingresa un salario anual válido.");
              }
-             // Ejercicio 7: Otro ejercicio
+
+             // Ejercicio 7: Remainder Finder
+             Console.Write("Ingresa el primer número: ");
+             if (double.TryParse(Console.ReadLine(), out double numero11))
+             {
+             Console.Write("Ingresa el segundo número: ");
+              if (double.TryParse(Console.ReadLine(), out double numero2) && numero2 != 0)
+              {
+              double residuo = numero1 % numero2;
+             Console.WriteLine($"Resultado: {residuo}");
+             }
+             else
+             {
+              Console.WriteLine("Resultado: El segundo número debe ser diferente de cero.");
+             }
+             }
+             else
+              {
+               Console.WriteLine("Entrada no válida. Ingresa números válidos.");
+             }
+
+
+
              // Ejercicio 8: Otro ejercicio
              // Ejercicio 9: Otro ejercicio
              // Ejercicio 10: Otro ejercicio
