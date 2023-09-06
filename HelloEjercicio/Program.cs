@@ -176,14 +176,26 @@ namespace HelloEjercicio
 
 
 
-             // Ejercicio 8: Otro ejercicio
+             // Ejercicio 8: Sum of Evens
+             int sumaPares = 0;
+             for (int i = 1; i <= 50; i++)
+             {
+             if (i % 2 == 0)
+             {
+             sumaPares += i;
+             }
+             }
+
+             Console.WriteLine($"Resultado: {sumaPares}");
+
+
              // Ejercicio 9: Otro ejercicio
              // Ejercicio 10: Otro ejercicio
              // Ejercicio 11: Otro ejercicio
              // Ejercicio 12: Otro ejercicio
              // Ejercicio 13: Otro ejercicio
              // Ejercicio 14: Otro ejercicio
-             // Ejercicio 5: Otro ejercicio
+             // Ejercicio 15: Otro ejercicio
         
             
         }
