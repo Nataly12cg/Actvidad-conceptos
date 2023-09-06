@@ -78,7 +78,27 @@ namespace HelloEjercicio
              Console.WriteLine("Entrada no válida. Ingresa un número válido.");
               }
 
-              // Ejercicio 4: Otro ejercicio
+              
+               // Ejercicio 4: Circle Perimeter
+              Console.Write("Ingresa el radio de un círculo: ");
+              if (double.TryParse(Console.ReadLine(), out double radio))
+              {
+              if (radio > 0)
+              {
+             double perimetro = 2 * Math.PI * radio;
+              Console.WriteLine($"Resultado: {perimetro:F2}");
+              }
+              else
+              {
+               Console.WriteLine("Resultado: Radio no válido. Debe ser mayor que 0.");
+             }
+             }
+             else
+             {
+              Console.WriteLine("Entrada no válida. Ingresa un número válido.");
+                }
+
+
              // Ejercicio 5: Otro ejercicio
              // Ejercicio 6: Otro ejercicio
              // Ejercicio 7: Otro ejercicio
