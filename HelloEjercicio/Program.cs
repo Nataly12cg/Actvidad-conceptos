@@ -20,6 +20,7 @@ namespace HelloEjercicio
                     Console.WriteLine("Resultado: Número negativo.");
                 }
                 else
+            
                 {
                     Console.WriteLine("Resultado: 0");
                 }
@@ -236,7 +237,7 @@ namespace HelloEjercicio
                 Console.WriteLine("Entrada no válida. Ingresa un número entero válido.");
             }
 
-            // Ejercicio 13: InRange Validator
+            // Ejercicio 13,14,15: InRange Validator
             Console.Write("Ingresa un número para verificar si está en el rango de 10 a 20: ");
             if (int.TryParse(Console.ReadLine(), out int numeroRango))
             {
