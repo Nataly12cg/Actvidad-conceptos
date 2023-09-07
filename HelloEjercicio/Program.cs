@@ -183,9 +183,55 @@ namespace HelloEjercicio
                     sumaPares += i;
                 }
             }
+              
+              // Ejercicio 9: Fraction Difference
 
-            Console.WriteLine($"Resultado: {sumaPares}");
+              {
+                Console.Write("Ingresa el numerador de la primera fracción: ");
+                if (int.TryParse(Console.ReadLine(), out int numerador1))
+               {
+               Console.Write("Ingresa el denominador de la primera fracción (distinto de cero): ");
+             if (int.TryParse(Console.ReadLine(), out int denominador1) && denominador1 != 0)
+              {
+                Console.Write("Ingresa el numerador de la segunda fracción: ");
+                 if (int.TryParse(Console.ReadLine(), out int numerador2))
+                {
+                    Console.Write("Ingresa el denominador de la segunda fracción (distinto de cero): ");
+                    if (int.TryParse(Console.ReadLine(), out int denominador2) && denominador2 != 0)
+                    {
+                        // Calcular la diferencia de fracciones
+                        int nuevoDenominadorComun = denominador1 * denominador2;
+                        int nuevoNumerador1 = numerador1 * denominador2;
+                        int nuevoNumerador2 = numerador2 * denominador1;
 
+                        int diferenciaNumerador = nuevoNumerador1 - nuevoNumerador2;
+
+                        Console.WriteLine($"La diferencia de las fracciones {numerador1}/{denominador1} y {numerador2}/{denominador2} es: {diferenciaNumerador}/{nuevoDenominadorComun}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("El denominador de la segunda fracción debe ser un número válido y distinto de cero.");
+                    }
+                   }
+                  else
+                  {
+                  Console.WriteLine("El numerador de la segunda fracción debe ser un número válido.");
+                  }
+                 }
+                 else
+                {
+            Console.WriteLine("El denominador de la primera fracción debe ser un número válido y distinto de cero.");
+                  }
+                }
+                else
+                 {
+           Console.WriteLine("El numerador de la primera fracción debe ser un número válido.");
+                }
+
+            Console.ReadLine();
+                 }
+
+        
               // Ejercicio 10: String Length
             Console.Write("Ingresa una palabra: ");
             string? palabra = Console.ReadLine();
@@ -201,6 +247,7 @@ namespace HelloEjercicio
             }
 
             Console.WriteLine("Ingrese cuatro números para calcular su promedio:");
+
 
             // Ejercicio 11: Average of Four
             double numero111 = PedirNumero("Número 1: ");
