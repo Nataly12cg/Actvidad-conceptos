@@ -186,7 +186,7 @@ namespace HelloEjercicio
 
             Console.WriteLine($"Resultado: {sumaPares}");
 
-              // Ejercicio 9: String Length
+              // Ejercicio 10: String Length
             Console.Write("Ingresa una palabra: ");
             string? palabra = Console.ReadLine();
 
@@ -202,7 +202,7 @@ namespace HelloEjercicio
 
             Console.WriteLine("Ingrese cuatro números para calcular su promedio:");
 
-            // Ejercicio 10: Average of Four
+            // Ejercicio 11: Average of Four
             double numero111 = PedirNumero("Número 1: ");
             double numero22 = PedirNumero("Número 2: ");
             double numero33 = PedirNumero("Número 3: ");
@@ -212,7 +212,7 @@ namespace HelloEjercicio
 
             Console.WriteLine($"El promedio de los números ingresados es: {promedio}");
 
-            // Ejercicio 11: Vowel Counter
+            // Ejercicio 13: Vowel Counter
             Console.Write("Ingresa una palabra: ");
             string? palabraVocales = Console.ReadLine();
             if (palabra != null)
@@ -225,7 +225,7 @@ namespace HelloEjercicio
              Console.WriteLine("La entrada no puede estar vacía.");
              }
 
-            // Ejercicio 12: Factorial Finder
+            // Ejercicio 14: Factorial Finder
             Console.Write("Ingresa un número para calcular su factorial: ");
             if (int.TryParse(Console.ReadLine(), out int numeroFactorial))
             {
@@ -237,7 +237,7 @@ namespace HelloEjercicio
                 Console.WriteLine("Entrada no válida. Ingresa un número entero válido.");
             }
 
-            // Ejercicio 13,14,15: InRange Validator
+            // Ejercicio 15: InRange Validator
             Console.Write("Ingresa un número para verificar si está en el rango de 10 a 20: ");
             if (int.TryParse(Console.ReadLine(), out int numeroRango))
             {
