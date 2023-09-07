@@ -189,8 +189,21 @@ namespace HelloEjercicio
              Console.WriteLine($"Resultado: {sumaPares}");
 
 
-             // Ejercicio 9: Otro ejercicio
-             // Ejercicio 10: Otro ejercicio
+               
+             // Ejercicio 10: String Length
+             Console.Write("Ingresa una palabra: ");
+             string? palabra = Console.ReadLine();
+
+             if (palabra != null)
+             {
+                int longitud = palabra.Length;
+                Console.WriteLine($"Resultado: {longitud}");
+             }
+             else
+             {
+                Console.WriteLine("La entrada no puede estar vacía.");
+             }
+        
              // Ejercicio 11: Otro ejercicio
              // Ejercicio 12: Otro ejercicio
              // Ejercicio 13: Otro ejercicio
