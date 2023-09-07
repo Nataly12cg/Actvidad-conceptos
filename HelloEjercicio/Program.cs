@@ -204,12 +204,38 @@ namespace HelloEjercicio
                 Console.WriteLine("La entrada no puede estar vacía.");
              }
         
-             // Ejercicio 11: Otro ejercicio
+             
+              Console.WriteLine("Ingrese cuatro números para calcular su promedio:");
+        
+             // Ejercicio 11: Average of Four
+              double numero111 = PedirNumero("Número 1: ");
+              double numero22 = PedirNumero("Número 2: ");
+              double numero33 = PedirNumero("Número 3: ");
+              double numero4 = PedirNumero("Número 4: ");
+
+            
+             double promedio = (numero1 + numero22 + numero3 + numero4) / 4;
+
+            
+              Console.WriteLine($"El promedio de los números ingresados es: {promedio}");
+             }
+ 
+             static double PedirNumero(string mensaje)
+             {
+               double numero;
+             do
+              {
+              Console.Write(mensaje);
+              } while (!double.TryParse(Console.ReadLine(), out numero));
+              return numero;
+
+
+
              // Ejercicio 12: Otro ejercicio
              // Ejercicio 13: Otro ejercicio
              // Ejercicio 14: Otro ejercicio
              // Ejercicio 15: Otro ejercicio
-        
+         
             
         }
     }
